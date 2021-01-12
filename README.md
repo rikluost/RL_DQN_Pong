@@ -10,10 +10,12 @@ Specific libraries:
 
 - tensorflow, keras
 - gym Atari environment (pip install gym[atari])
+
 Software versions:
 
 - Python 3.7.9
 - TensorFlow 2.4
+
 References:
 
 - Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. A. (2013). Playing atari with deep reinforcement learning CoRR, abs/1312.5602. Retrieved from http://arxiv.org/abs/1312.5602

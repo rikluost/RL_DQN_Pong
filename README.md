@@ -2,7 +2,7 @@
 
 Teaching a machine to play an Atari game PONG using reinforcement learning, code adapted from (Geron 2019) and TF-Agents tutorials. The use of the code was to compare convergence performance with different optimizers, loss functions and replay buffer sizes.
 
-![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/pong.pong.gif)
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/pong.gif)
 
 The research and use of Reinforcement Learning (RL) algorithms have gained interest since the ground-breaking demonstration by DeepMind took place on 2013 (Mnih, et al., 2013). In that demonstration they showed how a deep learning model could learn to play 1970’s Atari 2600 games from the scratch. Not only did it learn to play the games, but its performance matched or surpassed the best human experts.
 

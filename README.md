@@ -18,6 +18,7 @@ Software versions:
 - Python 3.7.9
 - TensorFlow 2.4
 
+
 References:
 
 - Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. A. (2013). Playing atari with deep reinforcement learning CoRR, abs/1312.5602. Retrieved from http://arxiv.org/abs/1312.5602
@@ -30,3 +31,12 @@ References:
 - Fedus, W., Ramachandran, P., Agarwal, R., Bengio, Y., Larochelle, H., Rowland, M., & Dabney, W. (2020). Revisiting Fundamentals of Experience Replay. Proceedings of Machine Learning Research, ISSN: 2640-3498.
 
 
+You may also need to run/install some of these (linux):
+
+```apt update 
+apt install -y libpq-dev libsdl2-dev swig xorg-dev xvfb
+pip install tf-agents 
+pip install gym[atari]
+sudo apt-get install -y xvfb ffmpeg
+pip install 'imageio==2.4.0'
+pip install pyvirtualdisplay```

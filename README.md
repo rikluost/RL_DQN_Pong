@@ -22,7 +22,7 @@ References:
 - Geron, A. (2019). Hands-on machine learning with scikit-learn, keras, and tensorflow: Concepts, tools, and techniques to build intelligent systems (2nd ed.). O’Reilly UK Ltd.
 - Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction (2nd ed.). Cambridge: MIT Press.
 - Lillicrap, T., P., Hunt, J., Pritzel, A.,Heess, N., Erez, T., Tassa, Y., Silver, D., Wierstra, D. (2016 ) Continuous control with deep reinforcement learning. Retrieved from http://arxiv.org/abs/1509.02971 
-- Zhang, S. & Sutton, R. S., 2017. A Deeper Look at Experience Replay. [Online] Available at: https://arxiv.org/abs/1712.01275
-- Mnih, V. et al., 2015. Humanlevel control through deep reinforcement learning, s.l.: Nature, 518(7540):529–533.
-- Lin, L. -J., 1992. Self-improving reactive agents based on reinforcement learning, planning and teaching., s.l.: 8(3-4):293–321.
-- IUBH International University of Applied Sciences, 2020. Reinforcement Learning DLMAIRIL01. Erfurt: IUBH.
+- Zhang, S., & Sutton, R. S. (2017). A Deeper Look at Experience Replay. Retrieved from https://arxiv.org/abs/1712.01275
+- IUBH. (2020). Reinforcement Learning DLMAIRIL01. Erfurt: IUBH.
+- Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., . . . Ostrovski, G. (2015). Humanlevel control through deep reinforcement learning. Nature, 518(7540):529–533.
+- Fedus, W., Ramachandran, P., Agarwal, R., Bengio, Y., Larochelle, H., Rowland, M., & Dabney, W. (2020). Revisiting Fundamentals of Experience Replay. Proceedings of Machine Learning Research, ISSN: 2640-3498.

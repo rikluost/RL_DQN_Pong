@@ -2,6 +2,8 @@
 
 Teaching a machine to play an Atari game PONG using reinforcement learning, code adapted from (Geron 2019) and TF-Agents tutorials. The use of the code was to compare convergence performance with different optimizers, loss functions and replay buffer sizes.
 
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/pong.pong.gif)
+
 The research and use of Reinforcement Learning (RL) algorithms have gained interest since the ground-breaking demonstration by DeepMind took place on 2013 (Mnih, et al., 2013). In that demonstration they showed how a deep learning model could learn to play 1970’s Atari 2600 games from the scratch. Not only did it learn to play the games, but its performance matched or surpassed the best human experts.
 
 The jupyter notebook implementation here utilises TF-Agents RL library for Python, which can simulate various envi-ronments, such as Atari games. It is based on TensorFlow and is developed at Google.
@@ -26,3 +28,5 @@ References:
 - IUBH. (2020). Reinforcement Learning DLMAIRIL01. Erfurt: IUBH.
 - Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., . . . Ostrovski, G. (2015). Humanlevel control through deep reinforcement learning. Nature, 518(7540):529–533.
 - Fedus, W., Ramachandran, P., Agarwal, R., Bengio, Y., Larochelle, H., Rowland, M., & Dabney, W. (2020). Revisiting Fundamentals of Experience Replay. Proceedings of Machine Learning Research, ISSN: 2640-3498.
+
+

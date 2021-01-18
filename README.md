@@ -10,7 +10,21 @@ The research and use of Reinforcement Learning (RL) algorithms have gained inter
 
 The jupyter notebook implementation here utilises TF-Agents RL library for Python, which can simulate various envi-ronments, such as Atari games. It is based on TensorFlow and is developed at Google. Settings are similar to (Mnih, et al., 2015), but with improved optimiser, loss function and replay buffer settings.
 
-References:
+## Experience Replay Buffer
+
+Experience replay buffer introduces a new hyper-parameter, replay memory buffer size requiring careful tun-ing (Zhang & Sutton, 2017). Because the replay buffer is implemented as fixed-sized circular storage of tran-sitions, the buffer size directly affects the buffer's oldest policy's age. As the policy is updated every four en-vironment steps collected, the oldest policy in the buffer is the number of environment steps divided by four gradient updates (Fedus, et al., 2020). Hence if we run 800,000 iterations, it is pointless to have a buffer size larger than 200,000 when each trajectory is size of four.
+
+In this setting, buffer size of 50000 seems to work the best.
+
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/replay.gif)
+
+## Optimiser & loss function
+
+There are two common choices for loss and optimiser pairs, one uses Adam-optimiser and the MSE-loss func-tion, and the other uses the RMSProp optimiser with Huber-loss function. For DQN and Pong environment, Adam optimiser with MSE loss function seems to work much better. It converges nicely already after 400,000 iterations to approximately 19 average return while showing reasonably stable behaviour. It also roughly matches (Mnih, et al., 2013) results. The model with RMSProp and Huber loss, on the other hand, takes a long time to learn, and even after 1.6 million iterations, it had only managed to reach a mean return of only approximately 10. 
+
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/opti.gif)
+
+## References:
 
 - Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. A. (2013). Playing atari with deep reinforcement learning CoRR, abs/1312.5602. Retrieved from http://arxiv.org/abs/1312.5602
 - Geron, A. (2019). Hands-on machine learning with scikit-learn, keras, and tensorflow: Concepts, tools, and techniques to build intelligent systems (2nd ed.). O’Reilly UK Ltd.

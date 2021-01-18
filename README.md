@@ -16,13 +16,13 @@ Experience replay buffer introduces a new hyper-parameter, replay memory buffer 
 
 In this setting, buffer size of 50000 seems to work the best.
 
-![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/replay.gif)
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/replay.png)
 
 ## Optimiser & loss function
 
 There are two common choices for loss and optimiser pairs, one uses Adam-optimiser and the MSE-loss func-tion, and the other uses the RMSProp optimiser with Huber-loss function. For DQN and Pong environment, Adam optimiser with MSE loss function seems to work much better. It converges nicely already after 400,000 iterations to approximately 19 average return while showing reasonably stable behaviour. It also roughly matches (Mnih, et al., 2013) results. The model with RMSProp and Huber loss, on the other hand, takes a long time to learn, and even after 1.6 million iterations, it had only managed to reach a mean return of only approximately 10. 
 
-![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/opti.gif)
+![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/opti.png)
 
 ## References:
 

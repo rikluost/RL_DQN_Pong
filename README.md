@@ -1,23 +1,14 @@
 # Pong RL DQN implementation
 
-Teaching a machine to play an Atari game PONG using reinforcement learning, code adapted from (Geron 2019) and TF-Agents tutorials. The use of the code was to compare convergence performance with different optimizers, loss functions and replay buffer sizes.
+pong.ipynb implements a deep RL algorithm that utilises Deep Q-Network (DQN) with an experience replay algorithm (Mnih, et al., 2015). This implementation operates directly on raw pixel observations and learns policies to play an Atari game, Pong.
+
+Below visualisation is using trained policy. 
 
 ![grab-landing-page](https://github.com/rikluost/RL_DQN_Pong/blob/master/pong.gif)
 
 The research and use of Reinforcement Learning (RL) algorithms have gained interest since the ground-breaking demonstration by DeepMind took place on 2013 (Mnih, et al., 2013). In that demonstration they showed how a deep learning model could learn to play 1970’s Atari 2600 games from the scratch. Not only did it learn to play the games, but its performance matched or surpassed the best human experts.
 
-The jupyter notebook implementation here utilises TF-Agents RL library for Python, which can simulate various envi-ronments, such as Atari games. It is based on TensorFlow and is developed at Google.
-
-Specific libraries:
-
-- tensorflow, keras
-- gym Atari environment (pip install gym[atari])
-
-Software versions:
-
-- Python 3.7.9
-- TensorFlow 2.4
-
+The jupyter notebook implementation here utilises TF-Agents RL library for Python, which can simulate various envi-ronments, such as Atari games. It is based on TensorFlow and is developed at Google. Settings are similar to (Mnih, et al., 2015), but with improved optimiser, loss function and replay buffer settings.
 
 References:
 
@@ -31,12 +22,4 @@ References:
 - Fedus, W., Ramachandran, P., Agarwal, R., Bengio, Y., Larochelle, H., Rowland, M., & Dabney, W. (2020). Revisiting Fundamentals of Experience Replay. Proceedings of Machine Learning Research, ISSN: 2640-3498.
 
 
-You may also need to run/install some of these (linux):
-
-```apt update 
-apt install -y libpq-dev libsdl2-dev swig xorg-dev xvfb
-pip install tf-agents 
-pip install gym[atari]
-sudo apt-get install -y xvfb ffmpeg
-pip install 'imageio==2.4.0'
-pip install pyvirtualdisplay```
+The requirements.txt is included. The code is running smoothly on Ubuntu 20.4 with Python 3.7.9. 

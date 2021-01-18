@@ -1,4 +1,5 @@
-# Pong RL DQN implementation
+# Playing Atari Pong with Deep Q-Network: 
+## Implementation using TF-Agents, se-lecting efficient optimiser, and right replay buffer size.
 
 pong.ipynb implements a deep RL algorithm that utilises Deep Q-Network (DQN) with an experience replay algorithm (Mnih, et al., 2015). This implementation operates directly on raw pixel observations and learns policies to play an Atari game, Pong.
 
@@ -33,6 +34,7 @@ There are two common choices for loss and optimiser pairs, one uses Adam-optimis
 - Zhang, S., & Sutton, R. S. (2017). A Deeper Look at Experience Replay. Retrieved from https://arxiv.org/abs/1712.01275
 - IUBH. (2020). Reinforcement Learning DLMAIRIL01. Erfurt: IUBH.
 - Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., . . . Ostrovski, G. (2015). Humanlevel control through deep reinforcement learning. Nature, 518(7540):529–533.
+- Luostari R. (2021). Playing Atari Pong with Deep Q-Network: Implementation using TF-Agents, se-lecting efficient optimiser, and right replay buffer size.  
 - Fedus, W., Ramachandran, P., Agarwal, R., Bengio, Y., Larochelle, H., Rowland, M., & Dabney, W. (2020). Revisiting Fundamentals of Experience Replay. Proceedings of Machine Learning Research, ISSN: 2640-3498.
 
 
